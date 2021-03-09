@@ -4,7 +4,7 @@ EXPOSE 8080
 
 WORKDIR /spring-boot-mockito
 
-pwd
+RUN echo "PWD is: $PWD"
 
 ADD target/spring-boot-mockito-0.0.1-SNAPSHOT.jar spring-boot-mockito-0.0.1-SNAPSHOT.jar
 
