@@ -1,5 +1,8 @@
 com\javatechie\spring\mockito\api\SpringBootMockitoApplication.class
+META-INF\MANIFEST.MF
 com\javatechie\spring\mockito\api\controller\UserController.class
 com\javatechie\spring\mockito\api\dao\UserRepository.class
+META-INF\maven\com.example\spring-boot-mockito\pom.xml
+META-INF\maven\com.example\spring-boot-mockito\pom.properties
 com\javatechie\spring\mockito\api\model\User.class
 com\javatechie\spring\mockito\api\service\UserService.class
