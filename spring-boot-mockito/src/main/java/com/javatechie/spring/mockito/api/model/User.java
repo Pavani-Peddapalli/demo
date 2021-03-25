@@ -1,7 +1,11 @@
 package com.javatechie.spring.mockito.api.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 //import org.springframework.data.annotation.Id;
 
@@ -13,19 +17,47 @@ import javax.persistence.Id;
 
 
 @Entity
+@Table(name="USER")
 public class User {
 	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	@Column(name="ID")
 	private int id;
-	private String name;
-	private int age;
-	private String address;
-	public User(int i, String string, int j, String string2) {
-		// TODO Auto-generated constructor stub
-		this.id=i;
-		this.name=string;
-		this.age=j;
-		this.address=string2;
+	
+	public int getId() {
+		return id;
 	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	@Column(name="NAME")
+	private String name;
+	
+	@Column(name="AGE")
+	private int age;
+	
+	@Column(name="ADDRESS")
+	private String address;
+	
+	
 	
 
 }
